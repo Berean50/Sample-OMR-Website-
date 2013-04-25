@@ -1,3 +1,5 @@
+$btnPrimaryBackground: green;
+
 @import 'bootstrap';
 
 body {
@@ -6,10 +8,15 @@ body {
 
 @import 'bootstrap-responsive';
 
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+}
+
 .footer {
-	margin-top: 70px;
+	margin-top: 50px;
 	color: $grayLight;
 	a {
-		color: gray;
+		color: $gray;
 	}
 }

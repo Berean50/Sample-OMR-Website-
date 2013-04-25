@@ -1,7 +1,16 @@
 Omrails::Application.routes.draw do
+  resources :pins
+
+
   devise_for :users
 
+  get 'banks' => 'pages#Banks'
+
   get 'about' => 'pages#About'
+
+  get 'hotels' => 'pages#Hotels'
+
+  get 'restaurants' => 'pages#Restaurants'
 
   root :to => 'pages#Home'
 

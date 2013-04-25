@@ -10,13 +10,16 @@
       </a>
  
       <!-- Be sure to leave the brand out there if you want it shown -->
-      <a class="brand" href="#">Conakry City Directory</a>
+      <a class="brand">Conakry City Directory</a>
  
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
       	<ul class="nav">
-	        <li><%= link_to "Home", root_path %></li>
-				  <li><%= link_to "About", about_path %></li>
+	        <li><%= link_to "Acceuil / Home", root_path %></li>
+          <li><%= link_to "Banques / Banks", banks_path %></li>
+          <li><%= link_to "Hôtels / Hotels", hotels_path %></li>
+          <li><%= link_to "Restaurants", restaurants_path %></li>
+				  <li><%= link_to "À propos / About", about_path %></li>
 				</ul>
 				<ul class="nav pull-right">
         		<li><%= link_to "Login", '#' %></li>
