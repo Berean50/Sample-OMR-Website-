@@ -10,6 +10,8 @@ Omrails::Application.routes.draw do
 
   get 'hotels' => 'pages#Hotels'
 
+  get 'news' => 'pages#News'
+
   get 'restaurants' => 'pages#Restaurants'
 
   root :to => 'pages#Home'
