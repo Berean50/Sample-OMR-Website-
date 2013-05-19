@@ -17,4 +17,8 @@ doc/
 *.swp
 *~
 .project
+.DS_Store
 .idea
+
+# Ignore Paperclip Upload Files
+/public/system
