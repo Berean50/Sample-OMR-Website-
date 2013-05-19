@@ -10,24 +10,26 @@
       </a>
  
       <!-- Be sure to leave the brand out there if you want it shown -->
-      <a class="brand">Conakry City Directory</a>
- 
+      <!--<ul class="nav pull-left">-->
+      <a class="brand">Répertoire Ville Conakry City Directory</a> 
+      </ul>
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
       	<ul class="nav">
-	        <li><%= link_to "Acceuil / Home", root_path %></li>
+	        <!--<li><%= link_to "Acceuil / Home", root_path %></li>-->
           <li><%= link_to "Banques / Banks", banks_path %></li>
           <li><%= link_to "Hôtels / Hotels", hotels_path %></li>
           <li><%= link_to "Nouvelles / News", news_path %></li>
           <li><%= link_to "Restaurants", restaurants_path %></li>
-				  <li><%= link_to "À propos / About", about_path %></li>
+          <li><%= link_to "Extra", autres_path %></li>			  
 				</ul>
 				<ul class="nav pull-right">
           <% if user_signed_in? %>
-            <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
+            <li><%= link_to "À propos / About", about_path %></li>
             <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
           <% else %>
-        		<li><%= link_to "Login", new_user_session_path %></li>
+            <li><%= link_to "À propos / About", about_path %></li>
+        		<li><%= link_to "Login", new_user_session_path %></li>            
           <% end %>
         </ul>
       </div>

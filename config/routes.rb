@@ -14,6 +14,8 @@ Omrails::Application.routes.draw do
 
   get 'restaurants' => 'pages#Restaurants'
 
+  get 'autres' => 'pages#Autres'
+
   root :to => 'pages#Home'
 
   # The priority is based upon order of creation:
